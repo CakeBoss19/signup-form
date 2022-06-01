@@ -13,6 +13,55 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <div id="left-side">
+        <div id="banner">
+            <img src="./images-fonts/odin-lined.png" alt="Thor">
+            <h1>Oceana</h1>
+        </div>
+    </div>
+
+    <div id="right-side">
+        <section id="head">
+            <p>May harmony transmit there in the entire sky just as in the tremendous ethereal space all over the place.</p>
+            <p>Aum harmony, harmony, and harmony to us and all creatures!</p>
+        </section>
+
+        <form action="#" method="post" id="form">
+            <h2>Let's relax.</h2>
+            <label for="first-name">
+                    FIRST NAME
+                <input name="first-name" id="first-name" placeholder="Thor" type="text">
+            </label>
+
+            <label for="last-name">
+                LAST NAME
+                <input name="last-name" id="last-name" placeholder="Odinson" type="text">
+            </label>
+
+            <label for="email">
+                EMAIL
+                <input name="email" id="email" type="email">
+            </label>
+
+            <label for="phone">
+                PHONE NUMBER
+                <input name="phone" id="phone" type="tel">
+            </label>
+
+            <label for="password">
+                PASSWORD
+                <input name="password" id="password" type="password">
+            </label>
+
+            <label for="confirm-pass">
+                CONFIRM PASSWORD
+                <input name="confirm-pass" id="confirm-pass" type="password">
+            </label>
+        </form>
+
+        <button type="submit" value="submit" form="form">Create Account</button>  
+        <p>Already have an account? <a href="#">Log in</a></p>      
+    </div>
 </body>
 </html>
