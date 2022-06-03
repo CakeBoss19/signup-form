@@ -4,13 +4,11 @@
 }
 
 body {
-    display: table;
-    width: 100%;
-    font-size: 16px;
+    line-height: normal;
+    background-color: rgb(245, 245, 245);
 }
 
 #left-side {
-    color: white;
     position: absolute;
     left: 0px;
     height: 100vh;
@@ -26,21 +24,68 @@ body {
     align-items: center;
     gap: 2rem;
     margin-top: 37%;
+    padding: 15px 0;
+    font-size: 4rem;
+}
+
+#banner h1 {
+    font-family: 'Norse-Bold', 'Times New Roman', Times, serif !important;
+}
+
+p,
+h2,
+label,
+button {
+    font-family: 'Nokora', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 [src$='.png'] {
     width: 100px;
 }
 
-h1 {
-    font-family: 'Norse-Bold', 'Times New Roman', Times, serif !important;
-    font-size: 4rem;
-}
-
 #right-side {
     position: absolute;
     right: 0px;
     width: 60%;
+    height: 100vh;
+    display: flex;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    margin: auto 0;
+}
 
+#content > * {
+    flex: 1;
+    padding-left: 3rem;
+    margin-top: 3%;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#head p {
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    box-shadow: 0px 4px 16px -2px rgb(180, 180, 180);
+}
+
+#lists {
+    display: flex;
+}
+
+#lists > * {
+    flex: 1;
+}
