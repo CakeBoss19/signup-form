@@ -96,6 +96,7 @@ form {
 .form-item {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 h2 {
@@ -141,4 +142,18 @@ button:active {
 
 #sign-in p, a {
     padding: 25px 0;
+}
+
+.denied {
+    position: absolute;
+    right: -145px;
+    bottom: 12px;
+    color: red;
+}
+
+.approved {
+    position: absolute;
+    right: -15px;
+    bottom: 12px;
+    color: green;
 }
