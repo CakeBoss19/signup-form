@@ -9,7 +9,7 @@ body {
 }
 
 #left-side {
-    position: absolute;
+    position: fixed;
     left: 0px;
     height: 100vh;
     width: 40%;
@@ -18,7 +18,7 @@ body {
 }
 
 #banner {
-    background-color: rgba(41, 41, 41, 0.4);
+    background-color: rgba(15, 15, 15, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,7 @@ body {
     font-family: 'Norse-Bold', 'Times New Roman', Times, serif !important;
 }
 
+a,
 p,
 h2,
 label,
@@ -80,12 +81,61 @@ button {
 form {
     background-color: white;
     box-shadow: 0px 4px 16px -2px rgb(180, 180, 180);
+    padding-bottom: 14px;
 }
 
-#lists {
+#form-list{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.form-item {
     display: flex;
+    flex-direction: column;
 }
 
-#lists > * {
-    flex: 1;
+h2 {
+    padding: 14px 0;
+    font-size: 1.4rem;
+}
+
+label {
+    color:rgba(0, 0, 0, 0.7)
+}
+
+input {
+    margin: 8px 0;
+    padding: 4px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid rgba(134, 134, 134, 0.459);
+    margin-right: 50px;
+}
+
+input:focus {
+    border: 2px solid rgba(0, 132, 255, 0.9);
+}
+
+#sign-in > * {
+    font-size: 1rem;
+}
+
+#sign-in button {
+    background-color: rgba(0, 132, 255, 0.9);
+    padding: 15px 75px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px -2px grey;
+    color: white;
+    font-weight: bold;
+}
+
+button:active {
+    scale: 0.95;
+}
+
+#sign-in p, a {
+    padding: 25px 0;
 }

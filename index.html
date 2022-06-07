@@ -31,49 +31,38 @@
 
             <form action="#" method="post" id="form">
                 <h2>Let's relax.</h2>
-                <section id="lists">
-                    <ul id="left-list">
-                        <li>
-                            <label for="first-name">
-                                FIRST NAME
-                                <input name="first-name" id="first-name" placeholder="Thor" type="text">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="email">
-                                EMAIL
-                                <input name="email" id="email" type="email">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="password">
-                                PASSWORD
-                                <input name="password" id="password" type="password">
-                            </label> 
-                        </li>
-                    </ul>
 
-                    <ul id="right-list">
-                        <li>
-                            <label for="last-name">
-                                LAST NAME
-                                <input name="last-name" id="last-name" placeholder="Odinson" type="text">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="phone">
-                                PHONE NUMBER
-                                <input name="phone" id="phone" type="tel">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="confirm-pass">
-                                CONFIRM PASSWORD
-                                <input name="confirm-pass" id="confirm-pass" type="password">
-                            </label>
-                        </li>
-                    </ul>
-                </section>
+                <div id="form-list">
+                    <div class="form-item">
+                        <label for="first">First Name</label>
+                        <input type="text" name="first" id="first">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="last">Last Name</label>
+                        <input type="text" name="last" id="last">
+                    </div>                   
+
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" id="password2">
+                    </div>
+                </div>
             </form>
 
             <section id="sign-in">
@@ -85,90 +74,33 @@
 </body>
 </html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nokora&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../CSS-RESET.css">
-	<link rel="stylesheet" href="./dummy.css">
-    <script src="script.js" defer></script>
-    <title>Sign-Up Form</title>
-</head>
-<body>
+<!-- 
+<form action="#" method="post" id="form">
+    <h2>Let's relax.</h2>
 
-    <div id="left-side">
-        <div id="banner">
-            <img src="./images-fonts/odin-lined.png" alt="Thor">
-            <h1>Oceana</h1>
-        </div>
-    </div>
+    <ul id="form-list">
+        <li class="form-item">
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first">
 
-    <div id="right-side">
-        <div id="content">
-            <section id="head">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                    <br>
-                Sign up <em>now</em> to get started</p>
-                <p>Aum harmony, harmony, and harmony to us and all creatures!</p>
-            </section>
+            <label for="last">Last Name</label>
+            <input type="text" name="last" id="last">
+        </li>                   
 
-            <form action="#" method="post" id="form">
-                <h2>Let's relax.</h2>
-                <section id="lists">
-                    <ul id="left-list">
-                        <li>
-                            <label for="first-name">
-                                FIRST NAME
-                                <input name="first-name" id="first-name" placeholder="Thor" type="text">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="email">
-                                EMAIL
-                                <input name="email" id="email" type="email">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="password">
-                                PASSWORD
-                                <input name="password" id="password" type="password">
-                            </label> 
-                        </li>
-                    </ul>
+        <li class="form-item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
 
-                    <ul id="right-list">
-                        <li>
-                            <label for="last-name">
-                                LAST NAME
-                                <input name="last-name" id="last-name" placeholder="Odinson" type="text">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="phone">
-                                PHONE NUMBER
-                                <input name="phone" id="phone" type="tel">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="confirm-pass">
-                                CONFIRM PASSWORD
-                                <input name="confirm-pass" id="confirm-pass" type="password">
-                            </label>
-                        </li>
-                    </ul>
-                </section>
-            </form>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone">
+        </li>
+        
+        <li class="form-item">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
 
-            <section id="sign-in">
-                <button type="submit" value="submit" form="form">Create Account</button>  
-                <p>Already have an account? <a href="#">Log in</a></p>      
-            </section>
-        </div>
-    </div>
-</body>
-</html> -->
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="password2" id="password2">
+        </li>
+    </ul>
+</form> -->
