@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(../images-fonts/Norse-Bold.otf);
+}
+
+body {
+    line-height: normal;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
+#left-side {
+    position: fixed;
+    left: 0px;
+    height: 100vh;
+    width: 40%;
+    background-image: url(../images-fonts/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg);
+    background-size: cover;
+}
+
+#banner {
+    background-color: rgba(15, 15, 15, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 37%;
+    padding: 15px 0;
+    font-size: 4rem;
+}
+
+#banner h1 {
+    font-family: 'Norse-Bold', 'Times New Roman', Times, serif !important;
+}
+
+a,
+p,
+h2,
+label,
+button {
+    font-family: 'Nokora', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+[src$='.png'] {
+    width: 100px;
+}
+
+#right-side {
+    position: absolute;
+    right: 0px;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto 0;
+}
+
+#content > * {
+    flex: 1;
+    padding-left: 3rem;
+    margin-top: 3%;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#head p {
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    box-shadow: 0px 4px 16px -2px rgb(180, 180, 180);
+    padding-bottom: 14px;
+}
+
+#form-list{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 400px));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 14px 0;
+    font-size: 1.4rem;
+}
+
+label {
+    color:rgba(0, 0, 0, 0.7)
+}
+
+input {
+    margin: 8px 0;
+    padding: 4px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid rgba(134, 134, 134, 0.459);
+    margin-right: 50px;
+}
+
+input:focus {
+    border: 2px solid rgba(0, 132, 255, 0.9);
+}
+
+#sign-in > * {
+    font-size: 1rem;
+}
+
+#sign-in button {
+    background-color: rgba(0, 132, 255, 0.9);
+    padding: 15px 75px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px -2px grey;
+    color: white;
+    font-weight: bold;
+}
+
+button:active {
+    scale: 0.95;
+}
+
+#sign-in p, a {
+    padding: 25px 0;
+}
