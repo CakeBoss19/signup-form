@@ -15,13 +15,13 @@ function comparePassword(){
 }
 
 function borderConfirm(){
-    password.style.border = '2px solid green';
-    password2.style.border = '2px solid green';
+    password.style.border =  '1px solid green';
+    password2.style.border = '1px solid green';
 };
 
 function borderDeny(){
-    password.style.border = '2px solid red';
-    password2.style.border = '2px solid red';
+    password.style.border =  '1px solid red';
+    password2.style.border = '1px solid red';
 };
 
 function reset(){
