@@ -1,13 +1,15 @@
+const check_button = document.querySelector('button[type=button]');
 let password = document.querySelector('input[name=password]');
 let password2 = document.querySelector('input[name=confirm');
 let messageDiv = document.querySelector('.confirm');
 const message = document.createElement('p');
 
-messageDiv.appendChild(message);
-
-function doNothing(){
-    message.textContent = '';
-    message.classList.remove();
+function comparePassword(){
+    if (password2.value === password.value){
+        borderConfirm();
+    } else {
+        borderDeny();
+    };
 }
 
 function borderConfirm(){
@@ -24,10 +26,6 @@ function borderDeny(){
     message.textContent = 'Passwords do not match';
 };
 
-function onInput(){
-    if (password2.value === password.value){
-        borderConfirm();
-    } else {
-        borderDeny();
-    };
-};
+check_button.addEventListener('click', () => {
+    comparePassword();
+});

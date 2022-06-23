@@ -109,12 +109,13 @@ label {
 }
 
 input {
-    margin: 8px 0;
+    margin-bottom: 20px;
     padding: 4px 10px;
     border-radius: 6px;
     outline: none;
     border: 1px solid rgba(134, 134, 134, 0.459);
     margin-right: 50px;
+    height: auto;
 }
 
 input:focus {
@@ -156,4 +157,13 @@ button:active {
     right: -15px;
     bottom: 12px;
     color: green;
+}
+
+button[type=button] {
+    width: fit-content;
+    position: absolute;
+    height: 27px;
+    width: auto;
+    right: -10px;
+    bottom: 21px;
 }
