@@ -6,7 +6,7 @@ body {
     position: absolute;
     background-image: url(../images-fonts/mick-haupt-4X0bFW4S_QE-unsplash.jpg);
     top: 0px;
-    height: 18%;
+    height: 20%;
     width: 100vw;
 }
 
@@ -31,7 +31,7 @@ body {
 
 #content > * {
     box-sizing: border-box;
-    padding: 25px 14px;
+    padding: 0 14px 14px 14px;
 }
 
 #form-list {
@@ -41,4 +41,10 @@ body {
 
 input {
     width: 100%;
+}
+
+button[type='button'] {
+    position: relative;
+    right: 0;
+    bottom: 0;
 }
